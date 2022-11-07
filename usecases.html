@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Usecases - Chillar</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        div,
+        span {
+            color: #1e3667 !important;
+        }
+
+        .usecase-thumbnail {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            max-width: 100px;
+        }
+        .usecase-thumbnail a {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            max-width: 100px;
+        }
+        .usecase-thumbnail a img{
+      width:100%;
+      height:100%;
+        }
+
+        .usecase-card {
+            min-height: 600px;
+            border-radius: 20px;
+            background: #ffffff;
+            box-shadow: -18px 18px 70px #cfcfcf,
+                18px -18px 70px #ffffff;
+
+
+        }
+
+        .usecase-card_header {
+            display: flex;
+            align-items: center;
+        }
+        .card-client{
+            margin-right: 20px;;
+            width:160px;
+            height:160px;
+            padding:0px;
+            -webkit-box-shadow: 6px 17px 43px -15px rgba(0,0,0,0.75);
+            -moz-box-shadow: 6px 17px 43px -15px rgba(0,0,0,0.75);
+            box-shadow: 6px 17px 43px -15px rgba(0,0,0,0.75);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;  
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+
+    <!-- Topbar End -->
+      <!-- Navbar Start -->
+  <nav
+  class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+>
+  <a href="index.html" class="navbar-brand d-flex align-items-center">
+    <h1 class="m-0">
+      <img
+        class="img-fluid me-3"
+        src="img/icon/logo-01 .png"
+        alt=""
+        
+      />
+    </h1>
+  </a>
+  <button
+    type="button"
+    class="navbar-toggler"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarCollapse"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav align-content-center text-center mx-auto bg-white rounded pe-4 py-3 py-lg-0"style="
+    align-content: center;
+    align-items: center;
+">
+      <a href="index.html" class="nav-item nav-link ">Home</a>
+      <a href="aboutus.html" class="nav-item nav-link">About Us</a>
+      <!-- <div class="nav-item dropdown ">
+        <a
+          href="#"
+          class="nav-link active dropdown-toggle"
+          data-bs-toggle="dropdown"
+          >Who We Serve</a 
+        >
+        <div class="dropdown-menu bg-light border-0 m-0">
+          <a href="index.html#clients" class="dropdown-item">Clients</a>
+          <a href="usecases.html" class="dropdown-item">Use case</a>
+          
+        </div>
+      </div> -->
+
+      <a
+          href="usecases.html"
+          class="nav-item nav-link active"
+          >Who We Serve</a 
+        >
+      <div class="nav-item dropdown">
+        <a
+          href="#"
+          class="nav-link dropdown-toggle"
+          data-bs-toggle="dropdown"
+          >Culture</a
+        >
+        <div class="dropdown-menu bg-light border-0 m-0">
+          <a href="lifeatchillar.html" class="dropdown-item">Life at chillar</a>
+          <a href="team.html" class="dropdown-item">Our Team</a>
+          <a href="career.html" class="dropdown-item">Career</a>
+          
+        </div>
+      </div>
+      <a href="insights.html" class="nav-item nav-link">Insights</a>
+      <a href="awards.html" class="nav-item nav-link">Recognitions</a>
+      <a href="faq.html" class="nav-item nav-link ">FAQ</a>
+       <a href="contactus.html" class="nav-item nav-link "><span class="btn btn-cnt ">Contact Us</span></a>
+    </div>
+   
+  </div>
+ 
+</nav>
+  <!-- Navbar End -->
+
+
+
+
+    <section class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto" style="max-width: 500px">
+                <h1 class="display-6 mb-5">Clients & Use Cases
+                </h1>
+            </div>
+            <div class="text-center mx-auto ">
+                <p class="text-l mb-5 ">
+                    We have created a few use cases for our platforms to help our clients choose the most effective service that adheres to their needs.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mx-auto justify-content-between">
+                <div class="col usecase-thumbnail">
+                    <a href="#wallet">
+     <img src="./img/usecase/icons-header/wallet-01.jpg" alt="">
+                    <span class="mx-auto">Wallet</span>
+                    </a>
+               
+                </div>
+                <div class="col usecase-thumbnail">
+                    <a href="#lending">
+    <img src="./img/usecase/icons-header/lending-01.jpg" alt="">
+                    <span>Lending</span>
+                    </a>
+                
+                </div>
+                <div class="col usecase-thumbnail">
+                    <a href="#payments">
+        <img src="./img/usecase/icons-header/payment-01.jpg" alt="">
+                    <span>Payments</span>
+                    </a>
+            
+                </div>
+                <div class="col usecase-thumbnail">
+                    <a href="#cashback">
+ <img src="./img/usecase/icons-header/cashback-01.jpg" alt="">
+                    <span>Cashbacks</span>
+                    </a>
+                   
+                </div>
+                <div class="col usecase-thumbnail">
+                    <a href="#ecommerce">
+ <img src="./img/usecase/icons-header/trolly-01.jpg" alt="">
+                    <span>E-commerce</span>
+                    </a>
+                   
+                </div>
+                <div class="col usecase-thumbnail">
+                    <a href="#neobank">
+ <img src="./img/usecase/icons-header/bank-01.jpg" alt="">
+                    <span>Neo Bank</span>
+                    </a>
+                   
+                </div>
+                <div class="col usecase-thumbnail">
+                    <a href="#commodityExchange">
+                    <img src="./img/usecase/icons-header/commidity-01.jpg" alt="">
+                                        <span> Commodity Exchange</span>
+                    </a>
+                 
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5 usecase-cards">
+            <div style="">
+
+                <div class="container usecase-card mt-5 p-5" id="wallet">
+                    <div class="usecase-card_header" style="margin-left: -10px;">
+                        <img src="./img/usecase/wallet 1.png" alt="">
+                        <h4>Wallet</h4>
+                    </div>
+                    <div class="usecase-card_content">
+                        <div class="row my-3">
+                            <h5>Use case</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                                We have created a Wallet framework with payments and multi-point collections integrated
+                                with the Wallet Engine
+                            </p>
+                            <p class="text-left  mx-auto">
+                                <strong>Wallet:</strong> Students spends cash in their daily life. A wallet populated
+                                with cards that would work for them to manage their expenses digitally gave birth to a
+                                thought called Campus Wallet – an award-winning project with tens of thousands of
+                                students who use it on a daily basis.
+                                <br><strong> Integrated Payments & Collections:</strong> Traditionally, educational
+                                institutions have multiple revenue funnels, and managing the funnels,
+                                accounting, reconciliations, settlements, and reconciliation is what we do in Campus
+                                Wallets. The front end being a student/parent
+                                solution, the campus wallet has helped schools and colleges manage their funnels very
+                                effectively.
+                                We have a lot of schools and universities working on our Wallets. Our wallet system is
+                                also used by our clients like Credit AI, BFC, Khimji
+                                Ramdas internal Wallet, etc.
+                            </p>
+                        </div>
+                        <div class="row my-3">
+                            <h5>Tech</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                               <strong> Back End:</strong> PHP – MVC framework (Views all Html5 bootstrapped)<br>
+                               <strong> DB:</strong> Aurora AW, MY SQL<br>
+                               <strong> Android:</strong> Kotlin<br>
+                               <strong> IOS:</strong> Swift<br>
+                               <strong> Project management Tool: </strong>Jira<br>
+                               <strong> Development and code management: </strong>Git<br>
+                            </p>
+                            
+                        </div>
+                        <div class="row my-3">
+                            <h5>Applications</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                               <strong> Expenses:</strong> Employees, Customers, reference groups<br>
+                                <strong>Loans:</strong> Advances & loans for customers
+                            </p>
+                         
+                        </div>
+                        <div class="row my-3">
+                            <h5>Clients</h5>
+                         </div>
+                        <div class="row">
+                            <div class="col-md-2 card-client" style="background-image: url(./img/usecase/khimji.png)"><span class=" text-center pb-3 ">Khimji Ramdas</span></div>
+                            <div class="col-md-2 card-client" style="background-image: url(./img/usecase/jain.png)"><span class=" text-center pb-3">Jain University</span></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="container usecase-card mt-5 p-5" id="lending">
+                    <div class="usecase-card_header" style="margin-left: -10px;">
+                        <img src="./img/usecase/cash 1.png" alt="">
+                        <h4>Lending</h4>
+                    </div>
+                    <div class="usecase-card_content">
+                        <div class="row my-3">
+                            <h5>Use case</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                                <strong>Lending</strong> platform with required financial nodes to connect to regulated as well as private platforms to enable payments as
+                                 well as all functions of an ERP
+
+                            </p>
+                           
+                            <p class="text-left  mx-auto">
+                                <strong>Credit AI</strong>  is a farmer lending platform for Agri inputs and Agriculture products. The farmer will be onboarded and will be
+                                presented with their application to a lending marketplace. The system will regulate and create a dossier for lending. The
+                                system enables verification as well as lending for own funds as well.
+                                
+                            </p>
+                            <p class="text-left  mx-auto">
+                                <strong> Supervault</strong>  is an invoice discounting platform where the invoices are discounted on the basis of their invoice value and security from the Anchor Client. The entire loan management is worked out and loans are distributed through distributed
+                                pool accounts which is a completely new model.
+                                The lending system is integrated into payment platforms through - QR codes, Mobile Apps, Back end systems and third-party applications using IMPS / RTGS
+                                
+                            </p>
+                        </div>
+                        <div class="row my-3">
+                            <h5>Tech</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                               <strong> Back End:</strong> PHP – MVC framework (Views all Html5 bootstrapped)
+                               <br>
+                               <strong> DB:</strong>  Aurora AWS, MY SQL, Firebase Realtime<br>
+                               <strong> Android:</strong> Kotlin<br>
+                               <strong> IOS:</strong> Swift<br>
+                               <strong> Project management Tool: </strong>Jira<br>
+                               <strong> Development and code management: </strong>Git<br>
+                            </p>
+                            
+                        </div>
+                        <div class="row my-3">
+                            <h5>Applications</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                               Trade financing, Gold loans, Business loans, Invoice discounting, Employee advances.
+                            </p>
+                         
+                        </div>
+                        <div class="row my-3">
+                            <h5>Clients</h5>
+                         </div>
+                        <div class="row">
+                            <div class="col-md-2 card-client" style="background-image: url(./img/usecase/creditai.png)"><span class=" text-center pb-3">Credit AI</span></div>
+                            <div class="col-md-2 card-client" style="background-image: url(./img/usecase/supervault.png)"><span class=" text-center pb-3 ">Supervault</span></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="container usecase-card mt-5 p-5" id="payments">
+                    <div class="usecase-card_header" style="margin-left: -10px;">
+                        <img src="./img/usecase/pay-per-click 1.png" alt="">
+                        <h4>Payments</h4>
+                    </div>
+                    <div class="usecase-card_content">
+                        <div class="row my-3">
+                            <h5>Use case</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                                A payment platform that is quite universal and can be applied to any geography. We have a payment processing engine aligned with the last mile, predominantly with NFC, Biometric, and QR payments.
+                                 Payments cards from EMV platforms can be easily integrated into the platform, which could work as the front end of any application.
+                            </p>
+                            <p class="text-left  mx-auto">
+                                
+                                The payment module has been integrated with the BFC payment app in Bahrain, for making payments. 
+                                The customers of the bank uses this for making offline as well as online payments on a day-to-day basis. In our lending module for Credit AI, the payment part is a very critical part; where farmers use this for onward payment to shops for Agri inputs and Agriculture products.
+
+
+                            </p>
+                        </div>
+                        <div class="row my-3">
+                            <h5>Tech</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                               <strong> Back End:</strong>  Node.JS
+                               <br>
+                               <strong> Front End:</strong>  React
+
+                               <br>
+                               <strong> DB:</strong>  Mongo
+                               <br>
+                               
+                               <strong> Android:</strong> Kotlin<br>
+                               <strong> IOS:</strong> Swift<br>
+                               <strong> Project management Tool: </strong>Jira<br>
+                               <strong> Development and code management: </strong>Git<br>
+                            </p>
+                            
+                        </div>
+                        <div class="row my-3">
+                            <h5>Applications</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                                All payment-related applications which could be from buying a coffee from 
+                                a canteen to buying / transferring money
+                                from/to any stores either through
+                                EMV cards or Cards with QR or through mobile Apps
+                            </p>
+                         
+                        </div>
+                        <div class="row my-3">
+                            <h5>Clients</h5>
+                         </div>
+                        <div class="row">
+                            <div class="col-md-2 card-client" style="background-image: url(./img/usecase/bfc.png)"><span class=" text-center pb-3">Bahrain Financing Company</span></div>
+                            <div class="col-md-2 card-client" style="background-image: url(./img/usecase/phygicart.png)"><span class=" text-center pb-3 ">Phygicart</span></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="container usecase-card mt-5 p-5" id="cashback">
+                    <div class="usecase-card_header" style="margin-left: -10px;">
+                        <img src="./img/usecase/money-bag 1.png" alt="">
+                        <h4>Cash Back</h4>
+                    </div>
+                    <div class="usecase-card_content">
+                        <div class="row my-3">
+                            <h5>Use case</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                                We have created a Wallet framework with payments and multi-point collections integrated
+                                with the Wallet Engine
+                            </p>
+                            <p class="text-left  mx-auto">
+                                We have created a Wallet framework with payments and multi-point collections integrated with the Wallet Engine
+A cashback system that can be applied to any kind of cash-based reward program. The system should pull your cash back “cash “
+ and retrieve it for your purchases intelligently using the cash back for benefits based on the outlet/product.<br>
+
+ Indian Banks and their core banking system work under strict regulations from the Reserve Bank of India. They had to introduce Cash Back. We built Cashback for Federal bank -an emerging player who has won consecutive awards for their IT
+  capabilities and has entrusted us with creating a cashback as an independent system outside their core banking solutions.br>
+
+  We created a solution that will accrue points from the spending of the customer through banking channels, calculate the same and store it with us, and give it to him for redemption whenever he wants, as kind - strictly NOT CASH. We were continuously audited by one of the “Big 4”
+   on every parameter including our internal processes, storage, documentation, and whatnot, at every stage of development.<br>
+
+   Due to strict security measures, we were not given access to the main database of the bank, so the entire process was designed through a bridging module and we created a dedicated table structure to handle this process smoothly.
+    Created and tested to perfection, we are proud that the Bank has rolled out the system to its clients.
+                            </p>
+                        </div>
+                        <div class="row my-3">
+                            <h5>Tech</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                               <strong> Back End:</strong> Python for Concurrent API’s PHP – MVC framework (Views Node JS)<br>
+                               <strong> DB: </strong> AWS, Mongo
+                                <br>
+                              
+                               <strong> Project management Tool: </strong> Asana
+                                <br>
+                               <strong> Development and code management: </strong>Git<br>
+                            </p>
+                            
+                        </div>
+                        
+                        <div class="row my-3">
+                            <h5>Clients</h5>
+                         </div>
+                        <div class="row">
+                            <div class="col-md-2 card-client" style="background-image: url(./img/usecase/federal.png)"><span class=" text-center pb-3 ">Federal Bank</span></div>
+                            
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="container usecase-card mt-5 p-5" id="ecommerce">
+                    <div class="usecase-card_header" style="margin-left: -10px;">
+                        <img src="./img/usecase/146-basket-trolley-shopping-card-outline (2) 1.png" alt="">
+                        <h4>E Commerce</h4>
+                    </div>
+                    <div class="usecase-card_content">
+                        <div class="row my-3">
+                            <h5>Use case</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                                An e-commerce engine with hyper-local options, enabling shop listing, 
+                                SKU listing, items as well as offers. The most important module is to split the revenue into three parts–merchant, 
+                                service provider, and delivery agent.
+                            </p>
+                            <p class="text-left  mx-auto">
+                                <strong>Merchant Association of Kerala </strong> 
+                                entrusted us to develop an end-to-end e-commerce system with order based on geo
+                                locales, cancelation of orders, delivery integration, and payments/refunds. The biggest challenge was to give a shop listing
+                                with local shops. We designed the entire module with language capability for managing the database of items in multiple
+                                languages, by translation and sometimes transliteration.An e-commerce engine with hyper-local options, enabling shop listing, SKU listing, items as well as offers. 
+                                The most important module is to split the revenue into three parts – merchant, service provider, and delivery agent.
+                                
+                                <br>Payment streamlining and dividing the payments for the delivery company and the merchant requires a string architecture, both in the product and in the payment environment. We build reconciliation for every merchant and 
+                                leverage the current tech space by adding all kinds of payment platforms like Credit cards, Debit cards, UPI, and net banking.
+                                <br><strong>10 Tailor</strong> 
+                             
+                             – a company based in the US engaged us to offer them a tripod tailoring and ordering system with fabric, 
+                             tailor, and delivery agents. Online payment options were also integrated
+                                
+                            </p>
+                        </div>
+                        <div class="row my-3">
+                            <h5>Tech</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                               <strong> Back End:</strong>  Python for Concurrent API’s PHP – MVC framework (Views all Html5 bootstrapped)<br>
+                               <strong> DB:</strong> Aurora AWS, Mongo
+                               <br>
+                               <strong> Software Development life cycle:</strong> Scrum<br>
+                               <strong> Project management Tool: </strong>Jira<br>
+                               <strong> Development and code management: </strong>Git<br>
+                            </p>
+                            
+                        </div>
+                     
+                        <div class="row my-3">
+                            <h5>Clients</h5>
+                         </div>
+                        <div class="row">
+                            <div class="col-md-2 card-client" style=" background-image: url(./img/usecase/10\ tailor.png)"><span class=" text-center pb-3 ">10 Tailor</span></div>
+                            <div class="col-md-2 card-client" style="background-image: url(./img/usecase/kvves.png)"><span class=" text-center pb-3 ">KVVES</span></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="container usecase-card mt-5 p-5" id="neobank">
+                    <div class="usecase-card_header" style="margin-left: -10px;">
+                        <img src="./img/usecase/bank 1.png" alt="">
+                        <h4>Neo Bank</h4>
+                    </div>
+                    <div class="usecase-card_content">
+                        <div class="row my-3">
+                            <h5>Use case</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                                A complete neo-banking back end that can be integrated into banks for savings, pre-paid, and third-party
+integrations like bill payment services, penny savings accounts, P2P transfers, and many other banking features.
+
+We have taken up the assignment of being a tech partner for Neofam – a neo bank that is created by a
+veteran in the BC business and an experienced professional with experience in DMT. The neo bank is released
+and is being used by thousands for Savings, PPI, and DMT Services to investment by integrating third-party
+APIs. Going forward the company’s plan is to acquire the licenses and become a bank by itself.
+                            </p>
+                            
+                        </div>
+                        <div class="row my-3">
+                            <h5>Tech</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                               <strong> Back End:</strong> PHP <br>
+                               <strong> DB:</strong>Mongo
+                               <br>
+                               <strong> Android:</strong> Kotlin<br>
+                               <strong> IOS:</strong> Swift<br>
+                               <strong> Project management Tool: </strong> Zoho Projects<br>
+                               <strong> Development and code management: </strong> Zoho Projects<br>
+                            </p>
+                            
+                        </div>
+                     
+                        <div class="row my-3">
+                            <h5>Clients</h5>
+                         </div>
+                        <div class="row">
+                            <div class="col-md-2 card-client" style="background-image: url(./img/usecase/neofam\ 1.png)"><div class=" text-center pb-3">neofam</div></div>
+                            
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="container usecase-card mt-5 p-5" id="commodityExchange">
+                    <div class="usecase-card_header" style="margin-left: -10px;">
+                        <img src="./img/usecase/943-commodity-outline (1) 1.png" alt="">
+                        <h4>Commodity Exchange </h4>
+                    </div>
+                    <div class="usecase-card_content">
+                        <div class="row my-3">
+                            <h5>Use case</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                                A commodity exchange platform with options for the wallet to hold money and do live trading of commodities. A back-end engine to align stock and disbursement even in physical form. Dynamic pricing, prioritizing lots and future price
+                                variations were worked out with the exchange module. 
+                            </p>
+                            <p class="text-left  mx-auto">
+                                
+                                Developed and handed over a Commodity Exchange framework for TBX, which helps the common man invest in commodities especially; Agri Commodities. The client wanted to set up a mobile-based trading platform where they can invest and create a system right from procurement, settlement, reconciliation, and payments to Farmers, Warehouse management, 
+                                Disbursement of loans to farmers, buy back accounting, transfer of stock from buying FPC to Commodity Exchange
+                            </p>
+                        </div>
+                        <div class="row my-3">
+                            <h5>Tech</h5>
+                         </div>
+                        <div class="row">
+                            <p class="text-left  mx-auto">
+                               <strong> Back End:</strong> Node.JS
+                               <br>
+                               <strong> DB:</strong> Mongo
+                               <br>
+                               <strong> Android:</strong> Kotlin<br>
+                               <strong> IOS:</strong> Swift<br>
+                               <strong> Project management Tool: </strong>: Zoho Projects
+                               <br>
+                               <strong> Development and code management: </strong>Git<br>
+                            </p>
+                            
+                        </div>
+                        
+                        <div class="row my-3">
+                            <h5>Clients</h5>
+                         </div>
+                        <div class="row">
+                            <div class="col-md-2 card-client" style="background-image: url(./img/usecase/tuskerberry.png)"><div class=" text-center pb-3 ">Tuskerberry</div></div>
+                            
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div
+    class="bg-white footer mt-5 wow fadeIn"
+    data-wow-delay="0.1s"
+  >
+  <div class="container ">
+    <div class="row">
+      
+      <div class="col-lg-3 col-md-6  pt-5 px-lg-5">
+        <h6 class="footer-header mb-4">Ready to level up?</h6>
+        
+        <a class="footer-link"  href="career.html"><p>Careers</p></a> 
+        <a class="footer-link"  href="lifeatchillar.html"><p>Life at Chillar</p></a>
+      </div>
+      <div class="col-lg-2 col-md-6 pt-5">
+        <h6 class="footer-header mb-4">Hotlink</h6>
+        
+        <a class="footer-link"  href="faq.html"><p>FAQ</p></a>
+      </div>
+      <div class="col-lg-3 col-md-6  pt-5">
+        <h6 class="footer-header mb-4">Behind the Scenes</h6>
+        <a class="footer-link"  href="aboutus.html"><p>About us</p></a>
+        <a class="footer-link"  href="team.html"><p>Our Team</p></a>
+        <a class="footer-link"  href="contactus.html"><p>Contact Us</p></a>
+      </div>
+      <div class="col-lg-2 col-md-6  pt-5">
+        <h6 class="footer-header mb-4">The legal bits</h6>
+        <a class="footer-link"  href="/"><p>Terms and conditions</p></a>
+        <a class="footer-link"  href="/"><p>Privacy Policy</p></a>
+      </div>
+      <div class="col-lg-2 col-md-6  pt-5">
+        <h6 class="footer-header mb-4">Follow us</h6>
+        <div class="position-relative mx-auto" style="max-width: 400px">
+          <div class="d-flex pt-2">
+            <a class="btn btn-square me-1" href="https://g.page/ChillarPayment"target="_blank"
+              ><i class="fa fa-map-marked"></i
+            ></a>
+            <a class="btn btn-square me-1" href="https://www.facebook.com/chillarpayment/"target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-square me-1" href="https://www.instagram.com/chillar_family/"target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a class="btn btn-square me-0" href="https://in.linkedin.com/company/chillar-payment-solutions-pvt-ltd"target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+     
+       
+      </div>
+    </div>
+    <div class="container">
+      <p class="text-center py-5 mb-5 mx-auto" style="max-width: 900px">
+        Need a backup for your startup? We can help you in your company’s progress by providing you with the safest, fastest, and easy-to-use fintech platforms.
+      </p>
+    </div>
+    <div class=" copyright ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center  mb-3 mb-md-0 text-white">
+            &copy; 2022 Chillar, All Right Reserved.
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

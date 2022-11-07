@@ -1,0 +1,51 @@
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height:min-content;
+    background-size: cover;
+    
+
+}
+.insights{
+    background-color: #F1F9FB;
+}
+.para-1-insights {
+ 
+    font-size: 20px;
+    font-weight: 100;
+    color: #1E3667;
+   
+}
+.sub-header{
+    font-size: 24px;
+    color: #6AC9C8;
+    padding-left: 0px;
+
+}
+.para-2-insights {
+    
+  
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 100;
+    color: #1E3667;
+
+}
+.para-list{
+    color: #1E3667;
+    font-size: 16px;
+}
+.list{
+    color: #1E3667 !important;
+}
+p{
+    color: #1E3667 !important;
+}
+.total-insights{
+    background-color:#F1F9FB ;
+}
+:target {
+    display: block;
+    position: relative;
+    top: 120px; 
+  }

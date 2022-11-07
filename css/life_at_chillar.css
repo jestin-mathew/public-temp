@@ -1,0 +1,253 @@
+.head1color2 {
+    color: #6AC9C8;
+}
+
+.head1color1 {
+    color: #1E3667;
+}
+
+.head1 {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.head1>h3 {
+    font-size: 45px;
+}
+
+.section2 {
+    padding-top: 100px;
+}
+
+.img1 {
+    height: auto;
+    width: 80%;
+}
+
+.section2quote {
+    font-size: 100px;
+    margin-bottom: -3rem;
+}
+
+.section2>.row {
+    margin-left: 70px;
+}
+
+.section3 {
+    /* height: 950px; */
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: #1E3667;
+    color: white;
+    background-image: url('../img/lacbgimg.jpg');
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(30, 54, 103, 0.9);
+    /* overflow-x: hidden; */
+    /* background: rgba(51, 170, 51, .5) ; */
+}
+
+/* .section3div1 {
+    padding-top: 10%;
+
+} */
+.section3div1>p {
+    padding-top: 60px;
+}
+
+.section3div1>h6 {
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+
+}
+
+.section3div2 {
+    /* padding-top: 20%; */
+    margin-left: 20px;
+}
+
+.section3p {
+    font-size: large;
+}
+
+.section3list {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.section3ol {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.section3div1>h6>span {
+    color: aqua;
+}
+
+ol li::marker {
+    color: #6AC9C8;
+}
+
+ol li {
+    /* font-size: 23px; */
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 600px) {
+    .img1 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .img1 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .img1 {
+        width: 100%;
+    }
+}
+
+.tickmark {
+    margin-right: 15px;
+}
+
+#flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+.column {
+    flex: 25%;
+    max-width: 40%;
+    /*   padding: 0 4px; */
+}
+
+.column img {
+    vertical-align: middle;
+    /*   margin-top: 8px; */
+    /* filter: grayscale(70%); */
+}
+
+.column:nth-child(even) {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.chillarfamily {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    background-color: #1E3667;
+    color: white;
+    background-image: url('../img/lacbgimg.jpg');
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(30, 54, 103, 0.9);
+    height: 500px;
+}
+.chillarfamily div h2 {
+    color: white;
+}
+.chillarfamily div p {
+    font-size: 18px;
+    font-weight: 100;
+}
+.cfbutton {
+    padding: 20px;
+    border-radius: 7px;
+    color: #1E3667;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/*** Footer ***/
+.footer {
+    color: #A7A8B4;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #A7A8B4;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #A7A8B4;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--light);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer-header{
+
+    color: #1e3667 !important;
+}
+.footer-link{
+
+
+    text-decoration: none;
+    color: #1e3667 !important;
+}
+.footer .btn.btn-square {
+    color: #A7A8B4;
+    border: 1px solid#A7A8B4;
+}
+
+.footer .btn.btn-square:hover {
+    color: var(--secondary);
+    border-color: var(--light);
+}
+
+.footer .copyright {
+    background-color: #1e3667;
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: var(--secondary);
+}
+
+.footer .copyright a:hover {
+    color: #FFFFFF;
+}
