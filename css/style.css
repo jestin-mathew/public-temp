@@ -927,7 +927,6 @@ ul{
   display: flex;
   flex-wrap: wrap;
 
-  row-gap: 2rem;
   list-style: none;
 }
 .card {
@@ -960,7 +959,7 @@ ul{
       transparent calc(var(--iconS) / 1.4 + 1px)
     ),
     var(--bgGradient);
-  --shadowInsetLight: inset 0.125rem 0.125rem 0.125rem rgba(255, 255, 255, 0.5);
+  /*--shadowInsetLight: inset 0.125rem 0.125rem 0.125rem rgba(255, 255, 255, 0.5);*/
   --shadowInsetDark: inset -0.067rem -0.067rem 0.067rem rgb(0 0 0 / .5);
   box-shadow: 
     var(--shadowInsetLight),
