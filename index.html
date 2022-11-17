@@ -58,7 +58,16 @@
   .logo{
     height: 100%;
   }
-  
+  .hidetag {
+  display: none;
+  /* position: fixed; */
+  bottom: 20%;
+  right: 50px;
+}
+
+.showtag {
+  display: block;
+}
   
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FR2S4SN0LD"></script>
@@ -174,7 +183,7 @@
         </div>
         <div class="h-25 position-absolute" style="bottom:30px;">
           <div class="col-md-6 col-lg-6 col-sm-8  ">
-            <img class="header-clients wow fadeInLeftBig" src="./img/header-bgs/header-awards.png" width="200px" />
+            <img class="header-clients hidetag" src="./img/header-bgs/header-awards.png" width="200px" />
           </div>
         </div>
       </div>
@@ -1116,13 +1125,41 @@ to minimize pilferage loss.
         $("#video").attr('src',$videoSrc); 
     }) 
         
-        
 
-
-      
-      
     // document ready  
     });
     </script>
+
+
+    <script>
+// header-clients
+$(document).ready(function(){
+  $(document).on("scroll", () => {
+    // $(".header-clients").animate({left: '0%'});
+
+    // $(".header-clients").removeClass("hidetag");
+    // $(".header-clients").addClass("showtag");
+
+    // $(".header-clients").animate({left: '50%'});
+    $(".header-clients").fadeIn(5000);
+    
+    // clearTimeout(timeout);
+    // timeout = setTimeout(() => $infoa.removeClass('hidetag'), 50);
+});
+
+
+// jQuery($ => {
+//   let timeout;
+//   let $header = $('.header-clients');
+//   $infoa.addClass("hidetag");
+
+
+  // });
+});
+    </script>
+
+
+
+
   </body>
 </html>
