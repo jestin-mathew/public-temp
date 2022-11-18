@@ -532,6 +532,13 @@
   .text-md-justify {
     text-align: justify;
   }
+  .header-clients{
+
+    content: 'osdjsjdik';
+    width:100%;
+    height: 100%;
+    /* background-image: url("../img/header-bgs/header-awards.png"); */
+}
 }
 /* FinService */
 .finservice-item {
