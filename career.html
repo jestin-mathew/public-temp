@@ -27,7 +27,89 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link href="css/style.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("wg9NdqrOR7wQ-TveR"); //use your USER ID
+   })();
+</script>
+
+<script>
+function send() {
+  const fullNameInput = document.getElementById('exampleInputName');
+  const emailInput = document.getElementById('exampleInputEmail1');
+  const positionInput = document.getElementById('exampleFormControlSelect1');
+  const fileInput = document.getElementById('exampleInputFile');
+  
+  const fullName = fullNameInput.value;
+  const email = emailInput.value;
+  const position = positionInput.value;
+  const file = fileInput.files[0];
+  
+  sendFormDataToEndpoint(fullName, email, position, file);
+}
+
+function sendFormDataToEndpoint(fullName, email, position, file) {
+  const endpointUrl = 'http://54.210.98.10/hr/upload';
+
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('fullname', fullName);
+  formData.append('email', email);
+  formData.append('position', position);
+
+  fetch(endpointUrl, {
+    method: 'POST',
+    body: formData
+  })
+    .then(response => {
+      if (response.ok) {
+        console.log('File uploaded successfully!');
+        Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: '<span style="font-size: 16px">Thank you for submitting your CV. We will review it and contact you if your skills meet our requirements.</span>',
+        showConfirmButton: true,
+        timer: 3000,
+        }).then(() => {
+        location.reload();
+        });
+        // Perform any additional actions upon successful upload
+      } else {
+        console.error('Error uploading file.');
+        Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!'
+        }).then(() => {
+        location.reload();
+        });
+      }
+    })
+    .catch(error => {
+      console.error('Error uploading file:', error);
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!'
+        }).then(() => {
+        location.reload();
+        });
+    });
+}
+
+
+    </script>
     <style>
       
         body,
@@ -112,6 +194,8 @@
             align-items: center;
             color: #fff;
         }
+
+
     </style>
 </head>
 
@@ -802,47 +886,37 @@
 
 
             <div class=" jumbotron container mt-3">
-                <form>
-            <div class="  col-md-6 offset-md-3 mt-5">
-                
-              <div class="d-flex justify-content-center  mt-2 pt-5">
-              
-                <h2>Apply Now</h2>
-            </div>
-            
-                  <div class="form-group mt-4 mb-4">
-                    <label for="exampleInputName">Full Name*</label>
-                    <input type="text" name="fullname" class="form-control mt-2" id="exampleInputName" placeholder="Your Name*" required="required">
-                  </div>
-                  <div class="form-group mb-4">
-                    <label for="exampleInputEmail1" required="required">Email address*</label>
-                    <input type="email" name="email" class="form-control mt-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email*">
-                  </div>
-                  <div class="form-group mb-4">
-                    <label for="exampleFormControlSelect1"> Select Position</label>
-                    <select class="form-control mt-2" id="exampleFormControlSelect1">
-                      <option> Manual Tester</option>
-                      <option> QA Test Automation </option>
-                      <option>Scrum Master</option>
-                     
-                     
-                    </select>
-                  </div>
-                   <div class="form-group mt-3">
-                    <label class="mr-4 mt-3">Upload your CV:
-                    <input type="file" name="file"></label>
-                  </div>
-                  <div class="d-flex justify-content-center  ">
-                  <button type="submit" class="btn btn-submit mb-5 mt-5 ">Submit</button>
-                
-                 </div>
-              </div>
-            </div>
-            </div>
 
-        </div>
-
-    </form>
+                <!-- <form > -->
+                    <div class="col-md-6 offset-md-3 mt-5">
+                      <div class="d-flex justify-content-center mt-2 pt-5">
+                        <h2>Apply Now</h2>
+                      </div>
+                      <div class="form-group mt-4 mb-4">
+                        <label for="exampleInputName">Full Name*</label>
+                        <input type="text" name="fullname" class="form-control mt-2" id="exampleInputName" placeholder="Your Name*" required="required">
+                      </div>
+                      <div class="form-group mb-4">
+                        <label for="exampleInputEmail1">Email address*</label>
+                        <input type="email" name="email" class="form-control mt-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email*" required="required">
+                      </div>
+                      <div class="form-group mb-4">
+                        <label for="exampleFormControlSelect1">Select Position</label>
+                        <select class="form-control mt-2" id="exampleFormControlSelect1">
+                          <option>Manual Tester</option>
+                          <option>QA Test Automation</option>
+                          <option>Scrum Master</option>
+                        </select>
+                      </div>
+                      <div class="form-group mt-3">
+                        <label class="mr-4 mt-3">Upload your CV:</label>
+                        <input type="file" name="file" id="exampleInputFile">
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-submit mb-5 mt-5" onclick="send()">Submit</button>
+                      </div>
+                    </div>
+                  <!-- </form> -->
 
 
 
